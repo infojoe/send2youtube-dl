@@ -17,18 +17,12 @@ downloadPATH="/var/media/WD1500GB/Media/Video/.Downloads/"  # location of final 
 touch /storage/.apps/youtube-dl/urls.txt  # optional if you want to keep a history of the urls downloaded
 echo $fileURL >> /storage/.apps/youtube-dl/urls.txt
 
-# echo $0    $1    $2    $3    $4    $5   $6 >> /storage/downloads/test.txt
-
-# echo filename= $filename  extension= $extension   downloaded filename will be $package.mp4   >> /storage/downloads/test.txt
-
    if [ "${filename##*.}" = "m3u8" ]; then  # if filename extension downloaded by pyload is m3u8, then call youtube-dl
         cd $downloadPATH
 	rm -r $folderpath
 	touch $ytdl-LOG
 	youtube-dl -f mp4 -o $package.mp4 $fileURL > $ytdlLOG 2>&1 &
    fi
-
-# LC_ALL=en_US.UTF-8 /storage/.apps/youtube-dl/youtube-dl -f mp4 $fileURL > $ytdlLOG 2>&1 &
 
 mv -n $folderpath $downloadPATH/$package/
 
