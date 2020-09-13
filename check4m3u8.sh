@@ -4,7 +4,7 @@ export PATH=$PATH:/storage/.apps/bin       # exports path to locate youtube-dl b
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/storage/.kodi/addons/tools.ffmpeg-tools/lib  # exports path to locate ffmpeg libraries
 
 filename=$2
-extension="${filename##*.}"
+# extension="${filename##*.}" 
 filepath="/storage/downloads/incomplete/*.m3u8"  # sets temp filepath variable in case some unforeseen error causes $3 argument to be blank
 filepath=$3
 fileURL=$5
