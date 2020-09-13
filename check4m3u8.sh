@@ -1,4 +1,5 @@
 #!/bin/sh
+# place script in /storage/.kodi/userdata/addon_data/service.downloadmanager.pyload/scripts/download_finished/
 
 export PATH=$PATH:/storage/.apps/bin       # exports path to locate youtube-dl binary
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/storage/.kodi/addons/tools.ffmpeg-tools/lib  # exports path to locate ffmpeg libraries
