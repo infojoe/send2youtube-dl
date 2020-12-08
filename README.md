@@ -1,5 +1,5 @@
 # send2youtube-dl
-download manager scripts to redirect HLS / m3u8 urls to youtube-dl
+Pyload download manager script to redirect HLS / m3u8 urls to youtube-dl
 
 I enjoy using an old Rasberry Pi2 running LIBREELEC as an external downloader for online videos. For non HLS type videos, I have been using aria2c along with a great android app called Aria2app. Unfortunately aria2c fails to download HLS based m3u8 files so I needed to find a way to send these files over to youtube-dl which works perfectly to download these sliced up videos. 
 
