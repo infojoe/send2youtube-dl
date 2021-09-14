@@ -12,7 +12,7 @@ fileURL=$5
 package=$6
 folderpath="/storage/downloads/incomplete/"$package # location of pyload download folder and package subfolder
 ytdlLOG="/storage/.apps/youtube-dl/log.txt"  # location of youtube-dl log file
-tempfolder="/storage/downloads/incomplete/"
+tempfolder="/storage/downloads/incomplete/" # temp download location. Useful if you want to avoid waking sleeping HDD until file is completed
 
 downloadPATH="/var/media/WD1500GB/Media/Video/Downloads/"  # location of final destination to move downloads
 
