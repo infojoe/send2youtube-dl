@@ -21,7 +21,7 @@ echo $fileURL >> /storage/.apps/youtube-dl/urls.txt
    if [ $extension = "m3u8" ]; then  # if filename extension downloaded by pyload is m3u8, then call youtube-dl
         rm -r $folderpath
 	cd $downloadPATH
-	touch $ytdl-LOG
+	touch $ytdlLOG
 	youtube-dl -f mp4 -o $package.mp4 $fileURL > $ytdlLOG 2>&1 &
    fi
 
